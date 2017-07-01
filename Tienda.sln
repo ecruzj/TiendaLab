@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tienda", "Tienda\Tienda.csproj", "{CD285CD2-06B8-4F6B-9172-E5D8DB1EA786}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cliente", "Cliente", "{1649D2E1-9846-40E0-8C39-C0C2C060E6B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{155E49FE-1993-4224-93F9-42A2FA22F446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tienda.Datos", "Tienda.Entidades\Tienda.Datos.csproj", "{0E13BBBD-EF1F-47C9-ABAC-28C9BED80484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tienda.DTOs", "Tienda.DTOs\Tienda.DTOs.csproj", "{E882911D-F8F4-4D82-9CF3-EC4F06C99644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tienda.Servicios", "Tienda.Servicios\Tienda.Servicios.csproj", "{9C61F592-631C-4544-BEDD-8C378F5CF982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tienda.Web", "Tienda.Web\Tienda.Web.csproj", "{46DF8AEA-AECD-45E0-8FE2-6A089817EF60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tienda.Domain", "Tienda.Domain\Tienda.Domain.csproj", "{A88A0CC9-9D15-4446-8F88-4E77FC37A304}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD285CD2-06B8-4F6B-9172-E5D8DB1EA786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD285CD2-06B8-4F6B-9172-E5D8DB1EA786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD285CD2-06B8-4F6B-9172-E5D8DB1EA786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD285CD2-06B8-4F6B-9172-E5D8DB1EA786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E13BBBD-EF1F-47C9-ABAC-28C9BED80484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E13BBBD-EF1F-47C9-ABAC-28C9BED80484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E13BBBD-EF1F-47C9-ABAC-28C9BED80484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E13BBBD-EF1F-47C9-ABAC-28C9BED80484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E882911D-F8F4-4D82-9CF3-EC4F06C99644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E882911D-F8F4-4D82-9CF3-EC4F06C99644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E882911D-F8F4-4D82-9CF3-EC4F06C99644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E882911D-F8F4-4D82-9CF3-EC4F06C99644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C61F592-631C-4544-BEDD-8C378F5CF982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C61F592-631C-4544-BEDD-8C378F5CF982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C61F592-631C-4544-BEDD-8C378F5CF982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C61F592-631C-4544-BEDD-8C378F5CF982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46DF8AEA-AECD-45E0-8FE2-6A089817EF60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46DF8AEA-AECD-45E0-8FE2-6A089817EF60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46DF8AEA-AECD-45E0-8FE2-6A089817EF60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46DF8AEA-AECD-45E0-8FE2-6A089817EF60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A88A0CC9-9D15-4446-8F88-4E77FC37A304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88A0CC9-9D15-4446-8F88-4E77FC37A304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88A0CC9-9D15-4446-8F88-4E77FC37A304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88A0CC9-9D15-4446-8F88-4E77FC37A304}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CD285CD2-06B8-4F6B-9172-E5D8DB1EA786} = {1649D2E1-9846-40E0-8C39-C0C2C060E6B3}
+		{0E13BBBD-EF1F-47C9-ABAC-28C9BED80484} = {155E49FE-1993-4224-93F9-42A2FA22F446}
+		{E882911D-F8F4-4D82-9CF3-EC4F06C99644} = {155E49FE-1993-4224-93F9-42A2FA22F446}
+		{9C61F592-631C-4544-BEDD-8C378F5CF982} = {155E49FE-1993-4224-93F9-42A2FA22F446}
+		{46DF8AEA-AECD-45E0-8FE2-6A089817EF60} = {155E49FE-1993-4224-93F9-42A2FA22F446}
+		{A88A0CC9-9D15-4446-8F88-4E77FC37A304} = {155E49FE-1993-4224-93F9-42A2FA22F446}
+	EndGlobalSection
+EndGlobal
