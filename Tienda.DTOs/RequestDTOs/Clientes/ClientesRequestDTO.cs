@@ -1,5 +1,4 @@
-﻿using ServiceStack;
-using System.Collections.Generic;
+﻿using ServiceStack.ServiceHost;
 using Tienda.DTOs.Clases;
 
 namespace Tienda.DTOs.RequestDTOs.Clientes

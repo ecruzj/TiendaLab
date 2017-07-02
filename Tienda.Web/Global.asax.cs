@@ -1,16 +1,13 @@
-﻿using ServiceStack;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Security;
-using System.Web.SessionState;
+﻿using System;
 using Tienda.Web.Api;
 using Funq;
-using ServiceStack.Text;
 using Tienda.Web.AutoMapper;
 using Tienda.Servicios.AppServices;
 using ServiceStack.ContainerAdapter.Unity;
+using ServiceStack.WebHost.Endpoints;
+using ServiceStack.ServiceHost;
+using ServiceStack.Common;
+using ServiceStack.Text;
 using Microsoft.Practices.Unity;
 
 namespace Tienda.Web
@@ -19,15 +16,15 @@ namespace Tienda.Web
     {
         public class AppHost : AppHostBase
         {
-            public AppHost() : base("Tienda RestApi Services", typeof(ClientesRestService).Assembly) { }
+            public AppHost() : base("Tienda RestApi Services", typeof(CategoriasRestService).Assembly) { }
 
             public override void Configure(Container container)
             {
-                JsConfig.DateHandler = DateHandler.ISO8601;
+                JsConfig.DateHandler = JsonDateHandler.ISO8601;
 
                 InitializeAutoMapper.InitializarAutomap();
 
-                SetConfig(new HostConfig
+                SetConfig(new EndpointHostConfig
                 {
                     GlobalResponseHeaders =
                     {
@@ -35,7 +32,7 @@ namespace Tienda.Web
                         {"Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS"},
                     },
                 });
-                SetConfig(new HostConfig
+                SetConfig(new EndpointHostConfig
                 {
                     EnableFeatures = Feature.All.Remove(Feature.All).Add(Feature.Xml | Feature.Json | Feature.Html),
                 });
@@ -45,6 +42,7 @@ namespace Tienda.Web
 
                 //App Services
                 unityContainer.RegisterType<IClientesAppServices, ClientesAppServices>();
+                unityContainer.RegisterType<ICategoriasAppServices, CategoriasAppServices>();
 
                 var unityAdapter = new UnityContainerAdapter(unityContainer);
                 container.Adapter = unityAdapter;
@@ -53,7 +51,7 @@ namespace Tienda.Web
 
         protected void Application_Start(object sender, EventArgs e)
         {
-
+            new AppHost().Init();
         }
 
         protected void Session_Start(object sender, EventArgs e)

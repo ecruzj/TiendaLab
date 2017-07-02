@@ -1,4 +1,4 @@
-﻿using ServiceStack;
+﻿using ServiceStack.ServiceHost;
 using Tienda.DTOs.Clases;
 
 namespace Tienda.DTOs.RequestDTOs.Articulos

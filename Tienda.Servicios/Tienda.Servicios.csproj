@@ -49,8 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppServices\Categorias\CategoriasAppServices.cs" />
     <Compile Include="AppServices\Clientes\ClientesAppServices.cs" />
     <Compile Include="AppServices\Clientes\IClientesAppServices.cs" />
+    <Compile Include="AppServices\Categorias\ICategoriasAppServices.cs" />
     <Compile Include="Helpers\AutomapperTypeAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +66,7 @@
       <Name>Tienda.Datos</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
