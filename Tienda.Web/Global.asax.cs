@@ -34,7 +34,7 @@ namespace Tienda.Web
                 });
                 SetConfig(new EndpointHostConfig
                 {
-                    EnableFeatures = Feature.All.Remove(Feature.All).Add(Feature.Xml | Feature.Json | Feature.Html),
+                    //EnableFeatures = Feature.All.Remove(Feature.All).Add(Feature.Xml | Feature.Json | Feature.Html).Add(Feature.Metadata),
                 });
 
                 //register any dependencies your services use, e.g:

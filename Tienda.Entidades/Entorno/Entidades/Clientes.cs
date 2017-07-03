@@ -8,6 +8,8 @@ namespace Tienda.Entidades.Entorno.Entidades
 {
     public partial class Clientes : IValidacionEntidades
     {
+        protected Clientes() { }
+
         public Clientes(string nombre)
         {
             this.Nombre = nombre;
